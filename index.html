@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Exemplo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    /* Fade-in original corrigido */
+    .fade-in { 
+      opacity: 1 !important;  /* corrigido: aparece imediatamente */
+      transform: none !important;  /* remove o deslocamento que deixava invisível */
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .images img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Links de contato */
+    .contact a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header class="fade-in">
+    <h1>Bem-vindo à minha Página</h1>
+  </header>
+
+  <section class="section fade-in">
+    <h2>Sobre Nós</h2>
+    <p>Esta é uma página de exemplo editada com as imagens substituídas e a animação corrigida.</p>
+  </section>
+
+  <section class="section images fade-in">
+    <h2>Nossas Imagens</h2>
+    <img src="https://via.placeholder.com/600x400?text=Imagem+1" alt="Imagem 1">
+    <img src="https://via.placeholder.com/600x400?text=Imagem+2" alt="Imagem 2">
+    <img src="https://via.placeholder.com/600x400?text=Imagem+3" alt="Imagem 3">
+  </section>
+
+  <footer class="fade-in">
+    <div class="contact">
+      <a href="https://wa.me/258878512774">WhatsApp</a>
+      <a href="mailto:rafaelmucavele60@gmail.com">E-mail</a>
+    </div>
+    <p>© 2026 Minha Página. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
